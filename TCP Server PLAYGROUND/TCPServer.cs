@@ -13,6 +13,7 @@ namespace TCP_Server_PLAYGROUND
     {
         static TcpListener _listener;
         static List<Manager> _users;
+ 
         public static void Main(string[] args)
         {
             _users = new List<Manager>();
