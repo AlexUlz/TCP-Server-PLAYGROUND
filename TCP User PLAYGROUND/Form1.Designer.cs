@@ -30,9 +30,9 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.buttonAddChat = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.buttonConnect = new System.Windows.Forms.Button();
-            this.buttonAddChat = new System.Windows.Forms.Button();
             this.textBoxMsg = new System.Windows.Forms.TextBox();
             this.buttonSend = new System.Windows.Forms.Button();
             this.labelUsername = new System.Windows.Forms.Label();
@@ -65,6 +65,17 @@
             this.tabPage1.Text = "Chats";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // buttonAddChat
+            // 
+            this.buttonAddChat.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddChat.Location = new System.Drawing.Point(3, 6);
+            this.buttonAddChat.Name = "buttonAddChat";
+            this.buttonAddChat.Size = new System.Drawing.Size(179, 42);
+            this.buttonAddChat.TabIndex = 1;
+            this.buttonAddChat.Text = "Add";
+            this.buttonAddChat.UseVisualStyleBackColor = true;
+            this.buttonAddChat.Click += new System.EventHandler(this.buttonAddChat_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.buttonConnect);
@@ -85,16 +96,7 @@
             this.buttonConnect.TabIndex = 0;
             this.buttonConnect.Text = "Connect";
             this.buttonConnect.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddChat
-            // 
-            this.buttonAddChat.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddChat.Location = new System.Drawing.Point(3, 6);
-            this.buttonAddChat.Name = "buttonAddChat";
-            this.buttonAddChat.Size = new System.Drawing.Size(179, 42);
-            this.buttonAddChat.TabIndex = 1;
-            this.buttonAddChat.Text = "Add";
-            this.buttonAddChat.UseVisualStyleBackColor = true;
+            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
             // 
             // textBoxMsg
             // 
@@ -157,7 +159,7 @@
             this.Controls.Add(this.textBoxMsg);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "VAN Chat";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

@@ -22,5 +22,17 @@ namespace TCP_User_PLAYGROUND
             Profile profile = new Profile();
             profile.Show();
         }
+
+        private void buttonConnect_Click(object sender, EventArgs e)
+        {
+            JoinRoom jr = new JoinRoom();
+            jr.Show();
+        }
+
+        private void buttonAddChat_Click(object sender, EventArgs e)
+        {
+            AddChat addChat = new AddChat();
+            addChat.Show();
+        }
     }
 }
